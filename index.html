@@ -29,6 +29,11 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
+      
+      <div style="text-align: center;"><button id="clear">CLEAR ALL</button></div>
+      <div style="text-align: center;"><button id="save-all">SAVE ALL</button></div>
+
+      <hr>
 
       <div class="input-group top-bottom-borders">
         <p>9 am</p>
@@ -135,12 +140,28 @@
           // This sets the local storage (events saved for each hour).
           $(`#Save-${i}`).on('click', function(event){
             for (var j = 9; j < 18; j++){
-              if (this.id === `Save-${j}`) {
-                localStorage.setItem(`${j}-event`, $(`#${j}`).val());
+              if (this.id === `Save-${j}`){
+              localStorage.setItem(`${j}-event`, $(`#${j}`).val());
               }
             }
           });
+
         }
+
+        // This clears all entries
+        $('#clear').on('click', function(event){
+          for (var k = 9; k < 18; k++){
+          $(`#${k}`).text('');
+          localStorage.setItem(`${k}-event`, '');
+          }
+        });
+
+        // This clears all entries
+        $('#save-all').on('click', function(event){
+          for (var l = 9; l < 18; l++){
+          localStorage.setItem(`${l}-event`, $(`#${l}`).val());
+          }
+        });
 
       });
       
