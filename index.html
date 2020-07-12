@@ -135,7 +135,9 @@
           // This sets the local storage (events saved for each hour).
           $(`#Save-${i}`).on('click', function(event){
             for (var j = 9; j < 18; j++){
-            localStorage.setItem(`${j}-event`, $(`#${j}`).val());
+              if (this.id === `Save-${j}`) {
+                localStorage.setItem(`${j}-event`, $(`#${j}`).val());
+              }
             }
           });
         }
