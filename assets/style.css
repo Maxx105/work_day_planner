@@ -89,6 +89,10 @@ textarea{
   border-top-style: solid;
 }
 
+button:hover {
+  background-color: white;
+}
+
 button:active {
   background-color: grey;
 }
@@ -97,3 +101,4 @@ img {
   width: 35px; 
   height: 35px;
 }
+
