@@ -156,7 +156,7 @@
           }
         });
 
-        // This clears all entries
+        // This saves all entries
         $('#save-all').on('click', function(event){
           for (var l = 9; l < 18; l++){
           localStorage.setItem(`${l}-event`, $(`#${l}`).val());
