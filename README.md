@@ -3,10 +3,24 @@ Work Day Scheduler
 
 This was the fifth homework assignment for the full stack web development program at UC Irvine, in which the goal was to build a Work Day Scheduler where the user can enter in events and those events are saved to the local storage. 
 
-How to use: 
-The planner shows text boxes for each hour of a 9-5 work day. Those text boxes are grey if the corresponding hours have past, is red if that is the current hour and are green if that hour has yet to come. You can click inside any box, and start typing an event. Then press the corresponding save button and it will save it to the local storage so the information will stay if the page is refreshed.
+link to deployed application:
+https://maxx105.github.io/work_day_planner/
 
-This is a rather simple application that exploits the moment.js library for time and dates. It first displays the current day of the week and date which uses the moment.js format, 'dddd, MMMM Do YYYY'. Using html/css with the help of bootstrap, I created 9 text boxes with a button appended after each one with each surrounded by top and bottom borders. I then created one large for loop that iterates between 9 and 17 (9am to 5pm) with the rest of the code within that for loop.
+image of deployed application:
+![deployed application](assets/deployed_app.JPG)
+
+How to use: 
+The planner shows text boxes for each hour of a 9-5 work day. Those text boxes are grey if the corresponding hours have passed, is red if that is the current hour and are green if that hour has yet to come. See screenshot of this taken a 2:30pm:
+![planner hours](assets/hours_screenshot.JPG)
+
+You can click inside any box, and start typing an event. Then press the corresponding save button and it will save it to the local storage so the information will stay if the page is refreshed.
+
+Additionally, there is a "CLEAR ALL" and a "SAVE ALL" button at the top which clear all entered text (including FROM local storage) and save all entered events (including TO local storage), respectively.
+
+This is a rather simple application that exploits the moment.js library for time and dates. It first displays the current day of the week and date which uses the moment.js format, 'dddd, MMMM Do YYYY'. 
+![displayed day](displayed_day.JPG)
+
+Using html/css with the help of bootstrap, I created 9 text boxes with a button appended after each one with each surrounded by top and bottom borders. I then created one large for loop that iterates between 9 and 17 (9am to 5pm) with the rest of the code within that for loop.
 
 There are three parts to the for loop: the get local storage element, the set local storage element, and the element that determines the color change depending on the current hour.
 
