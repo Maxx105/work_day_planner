@@ -22,7 +22,7 @@ Additionally, there is a "CLEAR ALL" and a "SAVE ALL" button at the top which cl
 
 # How it Works:
 This is a rather simple application that exploits the moment.js library for time and dates. It first displays the current day of the week and date which uses the moment.js format, 'dddd, MMMM Do YYYY'. 
-![displayed day](displayed_day.JPG)
+![displayed day](assets/displayed_day.JPG)
 
 Using html/css with the help of bootstrap, I created 9 text boxes with a button appended after each one with each surrounded by top and bottom borders. I then created one large for loop that iterates between 9 and 17 (9am to 5pm) with the rest of the code within that for loop.
 
