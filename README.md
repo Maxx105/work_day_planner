@@ -10,7 +10,7 @@ https://maxx105.github.io/work_day_planner/
 ![deployed application](assets/deployed_app.JPG)
 
 # Technologies:
-I used HTML and CSS for the front end as well as Bootstrap for styling. I used the moment.js library (https://momentjs.com/) to retrieve time and dates. The script is done with Javascript.
+I used HTML and CSS for the front end as well as Bootstrap for styling. I used the moment.js library (https://momentjs.com/) to retrieve time and dates. The script is done with Javascript and I also used Jquery.
 
 # How to use: 
 The planner shows text boxes for each hour of a 9-5 work day. Those text boxes are grey if the corresponding hours have passed, is red if that is the current hour and are green if that hour has yet to come. See screenshot of this taken a 2:30pm:
